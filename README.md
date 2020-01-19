@@ -97,6 +97,9 @@ Ideal method for creating React apps from beginning
 }
 ```
 
+## Branch
+- default is `develop` 
+
 ## Installation
 
 ```
