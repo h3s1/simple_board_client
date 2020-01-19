@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { GlobalStyle } from "./global-styles";
 import styled from "styled-components";
+import { Router } from "./Router";
+import { HashRouter } from "react-router-dom";
 
 // This is example of styled-components
 const Container = styled.main`
@@ -44,13 +46,13 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Container className="App">
-        <Header {...toggle} className="App-header">
-          react, typescript, styled-components
-          <br />
-          boilerplate
-        </Header>
-      </Container>
+      <HashRouter>
+        <Container className="App">
+          <Header {...toggle} className="App-header">
+            <Router />
+          </Header>
+        </Container>
+      </HashRouter>
     </>
   );
 }
