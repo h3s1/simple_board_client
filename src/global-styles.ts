@@ -1,5 +1,5 @@
-import { createGlobalStyle } from './typed-components';
-import { fontSize, color, media } from './config/_mixin';
+import { createGlobalStyle } from "./typed-components";
+import { fontSize, color, media } from "./config/_mixin";
 export const GlobalStyle = createGlobalStyle`
   /*
     normalize.css - https://necolas.github.io/normalize.css/
@@ -30,10 +30,8 @@ export const GlobalStyle = createGlobalStyle`
   body{
     font-family: 'Nanum Gothic', sans-serif;
     font-size: ${fontSize.normalFontSize};
-    /* background-color: ${color.default.bgColor};
-    color: ${color.default.fontColor}; */
-    background-color: ${color.darkmode.bgColor};
-    color: ${color.darkmode.fontColor};
+    background-color: ${color.default.bgColor};
+    color: ${color.default.fontColor};
     ${media.giant} {
       /* Giant View */
     }
@@ -52,7 +50,7 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none !important;
     &:hover{
         color: ${color.default.mainColor};
-        color: ${color.darkmode.mainColor};
+        color: ${color.default.mainColor};
     }
   }
 
